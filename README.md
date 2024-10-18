@@ -26,7 +26,7 @@
   </tr>
 </table>
 
-## :classical_building: PlaytiniGame
+## :smile: PlaytiniGame
 <table>
   <tr>
     <td align="center">
