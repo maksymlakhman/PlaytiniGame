@@ -41,5 +41,11 @@
       </a>
       <br>With Label
     </td>
+        <td align="center">
+      <a href="#macropower-tech">
+        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3pia2YxaTVkbTJ6dWgycGF6dzAwMWtyZXU4NjF2eTNqN3NlZ2t4ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/k45pgZZ5bMoZ2AUVFK/giphy.gif">
+      </a>
+      <br>After 5 Collisions
+    </td>
   </tr>
 </table>
