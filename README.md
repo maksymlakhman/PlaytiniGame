@@ -26,7 +26,7 @@
   </tr>
 </table>
 
-## :classical_building: Histo
+## :classical_building: PlaytiniGame
 <table>
   <tr>
     <td align="center">
