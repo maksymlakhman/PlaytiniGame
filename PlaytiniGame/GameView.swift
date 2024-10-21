@@ -5,11 +5,11 @@ class GameView {
     var circle: SKShapeNode!
     
     //BtnLabel
-//    var plusButton: SKLabelNode!
-//    var minusButton: SKLabelNode!
+    var plusButton: SKLabelNode!
+    var minusButton: SKLabelNode!
     // BtnImage
-    var plusButton: SKSpriteNode!
-    var minusButton: SKSpriteNode!
+//    var plusButton: SKSpriteNode!
+//    var minusButton: SKSpriteNode!
 
     init(scene: GameScene) {
         self.scene = scene
@@ -68,43 +68,43 @@ class GameView {
     }
     
     // Image
-    private func createButtons() {
-        let buttonsX = 0.95
-        let buttonsHeight = -scene.frame.size.height * 0.4
-
-        plusButton = SKSpriteNode(imageNamed: "plus")
-        plusButton.size = CGSize(width: 100, height: 100)
-        plusButton.position = CGPoint(x: buttonsX - 150, y: buttonsHeight)
-        plusButton.name = "plus"
-
-        minusButton = SKSpriteNode(imageNamed: "minus")
-        minusButton.size = CGSize(width: 100, height: 100)
-        minusButton.position = CGPoint(x: buttonsX + 150, y: buttonsHeight)
-        minusButton.name = "minus"
-
-        scene.addChild(plusButton)
-        scene.addChild(minusButton)
-    }
-
 //    private func createButtons() {
 //        let buttonsX = 0.95
 //        let buttonsHeight = -scene.frame.size.height * 0.4
 //
-//        plusButton = SKLabelNode(text: "+")
-//        plusButton.fontSize = 150
-//        plusButton.fontColor = .accent
+//        plusButton = SKSpriteNode(imageNamed: "plus")
+//        plusButton.size = CGSize(width: 100, height: 100)
 //        plusButton.position = CGPoint(x: buttonsX - 150, y: buttonsHeight)
 //        plusButton.name = "plus"
 //
-//        minusButton = SKLabelNode(text: "-")
-//        minusButton.fontSize = 200
-//        minusButton.fontColor = .accent
+//        minusButton = SKSpriteNode(imageNamed: "minus")
+//        minusButton.size = CGSize(width: 100, height: 100)
 //        minusButton.position = CGPoint(x: buttonsX + 150, y: buttonsHeight)
 //        minusButton.name = "minus"
 //
 //        scene.addChild(plusButton)
 //        scene.addChild(minusButton)
 //    }
+
+    private func createButtons() {
+        let buttonsX = 0.95
+        let buttonsHeight = -scene.frame.size.height * 0.4
+
+        plusButton = SKLabelNode(text: "+")
+        plusButton.fontSize = 150
+        plusButton.fontColor = .accent
+        plusButton.position = CGPoint(x: buttonsX - 150, y: buttonsHeight)
+        plusButton.name = "plus"
+
+        minusButton = SKLabelNode(text: "-")
+        minusButton.fontSize = 200
+        minusButton.fontColor = .accent
+        minusButton.position = CGPoint(x: buttonsX + 150, y: buttonsHeight)
+        minusButton.name = "minus"
+
+        scene.addChild(plusButton)
+        scene.addChild(minusButton)
+    }
 
     func updateCirclePosition() {
         circle.position = CGPoint(x: scene.frame.midX, y: scene.frame.midY)
